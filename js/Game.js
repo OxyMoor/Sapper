@@ -243,7 +243,7 @@ var interesting = document.querySelector('.interesting-div');
 // по нажатию на кнопку "об игре" берем данные из текстового файла спомощью ajax и кладем его в соответствующий блок
 document.querySelector('.interesting-button').addEventListener('click', animMore);
 function animMore() {
-    $.ajax("https://github.com/SeriakovaOksana/Sapper/blob/main/interesting.txt",
+    $.ajax("http://fe.it-academy.by/Sites/0033095/project/interesting.txt",
         { type:'GET', dataType:'text', success:dataLoaded, error:errorHandler }
     );
 }
