@@ -1,0 +1,323 @@
+@-webkit-keyframes loseWinAnim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes loseWinAnim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes loseAnim {
+    from {color: #ec92b8;}
+    50% {color: #692340;}
+    to {color: #ec92b8;}
+}
+@keyframes loseAnim {
+    from {color: #ec92b8;}
+    50% {color: #692340;}
+    to {color: #ec92b8;}
+}
+
+@-webkit-keyframes winAnim {
+    from {color: #e0ebb3;}
+    50% {color: #cbe558;}
+    to {color: #e0ebb3;}
+}
+@keyframes winAnim {
+    from {color: #e0ebb3;}
+    50% {color: #cbe558;}
+    to {color: #e0ebb3;}
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+.wrapper{
+    background: #f8f4cf;
+    max-width: 1000px;
+    min-height: 400px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+}
+.sapper {
+    -webkit-box-shadow: 10px 10px 15px #b79c45;
+        box-shadow: 10px 10px 15px #b79c45;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    background: #c0c0c0;
+    position: relative;
+    max-width: 700px;
+    max-height: 750px;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+        display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.img {
+    padding: 1px;
+    cursor: pointer;
+}
+.row1 {
+    height: 20%;
+}
+.img1 {
+    height: 20%;
+    width: 20%;
+}
+.row2 {
+    height: 10%;
+}
+.img2 {
+    height: 10%;
+    width: 10%;
+}
+.row3 {
+    height: 5%;
+}
+.img3 {
+    height: 5%;
+    width: 5%;
+}
+.los {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(201, 139, 139, 0.5);
+    -webkit-box-shadow: inset 0 0 10px #5f5050;
+        box-shadow: inset 0 0 10px #5f5050;
+    border-radius: 5px;
+    -webkit-animation: loseWinAnim 0.5s;
+        animation: loseWinAnim 0.5s;
+    -webkit-animation: loseAnim 2s infinite;
+        animation: loseAnim 2s infinite;
+}
+.final-text {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+        -ms-transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 80px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 5px #000;
+}
+.win {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(200, 250, 106, 0.5);
+    -webkit-box-shadow: inset 0 0 10px #59702f80;
+        box-shadow: inset 0 0 10px #59702f80; 
+    -webkit-animation: loseWinAnim 0.5s;  
+        animation: loseWinAnim 0.5s;
+    -webkit-animation: winAnim 2s infinite;
+        animation: winAnim 2s infinite;
+}
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+        display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    background: #692340;
+}
+.about-game-button {
+    padding: 10px;
+    border: 1px solid #f2ce5c;
+    background: transparent;
+    -webkit-box-shadow: 5px 5px 10px #3b1324;
+        box-shadow: 5px 5px 10px #3b1324;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.about-game-button:hover {
+    background: #f2ce5c;
+    -webkit-box-shadow: 5px 5px 10px #3b1324;
+        box-shadow: 5px 5px 10px #3b1324;
+            box-shadow: 5px 5px 10px #3b1324;
+    color: #fff;
+    -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+            transition: 0.5s;
+}
+.restart-button {
+    border: none;
+    background: #00ccf2;
+    -webkit-box-shadow: 5px 5px 10px #b79c45;
+        box-shadow: 5px 5px 10px #b79c45;
+    padding: 10px;
+    border-radius: 5px;
+    color: #00434b;
+    cursor: pointer;
+}
+.restart-button:hover {
+    background: #00434b;
+    color: #fff;
+    -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+            transition: 0.5s;
+}
+.field-size-range {
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.field-size-label {
+    color: #692340;
+}
+.settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+        display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;        
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 20px;
+    width: 100%;
+}
+.settings-buttons {
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+        display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;        
+            justify-content: center; 
+}
+.interesting-div {
+    width: 95%;
+    max-width: 950px;
+    padding: 0 20px ;
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    background: #f8f4cf;
+    -webkit-transition: 1s;
+        -o-transition: 1s;
+            transition: 1s;
+    -webkit-box-shadow: 10px 10px 15px #b79c45;
+            box-shadow: 10px 10px 15px #b79c45;
+}
+.level-list {
+    margin-left: 50px;
+}
+.innerWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1000px;
+    padding: 25px;
+}
+.innerWrap p,  .interesting-div p {
+    text-align: justify;
+    padding: 5px 0;
+}
+.innerWrap h1, .interesting-div h1 {
+    margin-bottom: 15px;
+}
+.back {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background: #692340;
+    color: #fff;
+    -webkit-box-shadow: 3px 3px 7px #b79c45;
+        box-shadow: 3px 3px 7px #b79c45;
+    cursor: pointer;
+}
+.close {
+    float: right;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: none;
+    background: #692340;
+    color: #fff;
+    -webkit-box-shadow: 3px 3px 7px #b79c45;
+        box-shadow: 3px 3px 7px #b79c45;
+    cursor: pointer;
+}
+.interesting-button {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    background: #692340;
+    color: #fff;
+    -webkit-box-shadow: 3px 3px 7px #b79c45;
+        box-shadow: 3px 3px 7px #b79c45;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.field-size-button {
+    background: #cbe558;
+    border: none;
+    padding: 5px 8px;
+    color: #007C89;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 10px #b79c45;
+        box-shadow: 5px 5px 10px #b79c45;
+    cursor: pointer;
+}
+.field-size-button:hover {
+    background: #0075ff;
+    color: #fff;
+    -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+            transition: 0.5s;
+}
