@@ -11,4 +11,4 @@ The web application is a game (“Sapper”) in which the player must open all t
 -	Adaptability
 -	Crossbrowser code
 -	On a mobile device, the correct display of game components, animation, sound, vibration works
-### Deploy: https://seriakovaoksana.github.io/Sapper/
+### Deploy: https://oxymoor.github.io/Sapper/
