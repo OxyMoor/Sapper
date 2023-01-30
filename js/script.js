@@ -67,7 +67,6 @@ window.onhashchange=switchToStateFromURLHash;
                     </ul>
                     <button class="back">Вернуться к игре</button>
                 `;
-                console.log('info')
                 // клик "вернуться к игре" - будет открыта страница с игрой
                 document.querySelector('.back').addEventListener('click', switchToMain);
                 break;
